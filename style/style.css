@@ -1,3 +1,6 @@
+html{
+    font-family: ;
+}
 body{
     margin: 0;
     background-image: url(../sources/img/pexels-pixabay-159400@2x.png);
@@ -16,6 +19,7 @@ body{
     width: 230px;
     height: 200px;
     animation: logo 5s ease;
+    display: none;
 }
 
 @keyframes logo {
@@ -27,4 +31,30 @@ body{
     100%{
         opacity: 100;
     }
+}
+
+.login{
+    width: 936px;
+    height: 761px;
+    border: 1px solid #707070;
+    border-radius: 67px;
+    opacity: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+
+}
+img{
+    width: 103px;
+    height: 116px;
+    margin-top: 1.9%;
+}
+
+.titulo{
+    width: 500px;
+    height: 96px;
 }
