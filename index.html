@@ -4,39 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto HTML</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Kario Media Sign In</title>
+    <link rel="stylesheet" href="./style/styleIndex.css">
+    <link rel="shortcut icon" href="./sources/svg/kario sin kairo.svg" type="image/x-icon">
 </head>
 
 <body>
     <img class="logoInicio" src="./sources/svg/kario sin kairo.svg" alt="logo">
-    <form action="index2.html" method="post"></form>
-    <div class="login">
+    <form class="signIn" action="main.html" method="post">
         <img class="logoLogin" src="./sources/svg/kario.svg" alt="">
-        <h1 class="titulo">Bienvenido al panel digital de
+        <span class="titulo">Bienvenido al panel digital de
             <br>KARIO Media
-        </h1>
-
+        </span>
         <p>Por favor ingresar los siguientes datos para ingresar a la plataforma</p>
-        
-        <div>
             <label for="usuario">Usuario</label>
-            <input type="text" id="usuario" />
-        </div>
-
-        <div>
+            <input type="text" id="usuario" name="user_name"/>
             <label for="contraseña">Contraseña</label>
-            <input type="text">
-        </div>
-
-        <div class="button">
-            <button type="submit">Ingresar al panel</button>
-        </div>
-
+            <input type="password" name="password">
+        <button type="submit">Ingresar al panel</button>
         <p class="piePag">Tienes problemas para ingresar? Por favor contactar con asistencia técnica lo más pronto posible</p>
-
-
-    </div>
+    </form>
 </body>
 
 </html>

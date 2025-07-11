@@ -1,6 +1,9 @@
+@import url("../sources/myriad-pro-webfont/fonts.css");
+
 html{
-    font-family: ;
+    font-family: 'Myriad Pro Regular';
 }
+
 body{
     margin: 0;
     background-image: url(../sources/img/pexels-pixabay-159400@2x.png);
@@ -8,7 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -16,30 +19,26 @@ body{
 
 
 .logoInicio{
+    position: absolute;
     width: 230px;
     height: 200px;
-    animation: logo 5s ease;
-    display: none;
+    opacity: 0;
+    animation: logo 5s ease forwards;
 }
 
 @keyframes logo {
-    0%{
-    }
-    50%{
+    25%{
         opacity: 0;
     }
-    100%{
-        opacity: 100;
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
     }
 }
 
-form{
-    margin: 0;
-    padding: 0;
-    display: none;
-}
-
-.login{
+.signIn{
     width: 936px;
     height: 761px;
     border: 1px solid #707070;
@@ -49,7 +48,21 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    animation: signIn 5s ease forwards;
+}
+
+@keyframes signIn {
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    75%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .logoLogin{
@@ -68,11 +81,14 @@ form{
 label{
     display: block;
     margin-top: 1rem;
+    font-family: 'Myriad Pro Light';
     font-size: 25px;
+    width: 650px;
 }
 
 p{
     margin:2;
+    font-family: 'Myriad Pro Light';
     font-size: 20px;
 }
 
@@ -81,8 +97,11 @@ input{
 
     border: 1px solid #707070;
     border-radius: 20px;
-    width: 650px;
+    width: 635px;
     height: 50px;
+    font-family: 'Myriad Pro Regular';
+    font-size: 20px;
+    padding-left: 15px;
 }
 
 button{
