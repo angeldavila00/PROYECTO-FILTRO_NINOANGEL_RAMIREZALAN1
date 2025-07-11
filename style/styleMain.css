@@ -1,0 +1,9 @@
+@import url("../sources/myriad-pro-webfont/fonts.css");
+
+html{
+    font-family: 'Myriad Pro Regular';
+}
+
+body{
+    margin: 0;
+}
