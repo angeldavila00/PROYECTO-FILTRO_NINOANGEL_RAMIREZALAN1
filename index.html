@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto HTML</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
     <img class="logoInicio" src="./sources/svg/kario sin kairo.svg" alt="logo">
+    <form action="index2.html" method="post"></form>
     <div class="login">
-        <img src="./sources/svg/kario.svg" alt="">
+        <img class="logoLogin" src="./sources/svg/kario.svg" alt="">
         <h1 class="titulo">Bienvenido al panel digital de
-            <br>KARIO Media</h1>
+            <br>KARIO Media
+        </h1>
+
+        <p>Por favor ingresar los siguientes datos para ingresar a la plataforma</p>
+        
+        <div>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" />
+        </div>
+
+        <div>
+            <label for="contraseña">Contraseña</label>
+            <input type="text">
+        </div>
+
+        <div class="button">
+            <button type="submit">Ingresar al panel</button>
+        </div>
+
+        <p class="piePag">Tienes problemas para ingresar? Por favor contactar con asistencia técnica lo más pronto posible</p>
+
+
     </div>
 </body>
-</html>justify-content: center;
+
+</html>
