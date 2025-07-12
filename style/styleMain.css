@@ -17,13 +17,14 @@ body {
     background-position: center;
     width: 100vw;
     height: 100vh;
+    top: 0;
+    left: 0;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 99;
     animation: preloaderAnimation 1s ease 5s forwards;
-    display: none;
 }
 
 @keyframes preloaderAnimation {
@@ -153,13 +154,13 @@ body {
 
 .headerCenter {
     display: flex;
-    width: ;
+    width: auto;
 }
 
 .headerCenter img {
     width: 42px;
     height: 37px;
-   
+
 }
 
 .leftOpcs,
