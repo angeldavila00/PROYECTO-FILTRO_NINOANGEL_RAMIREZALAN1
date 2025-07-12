@@ -23,17 +23,20 @@ body{
     width: 230px;
     height: 200px;
     opacity: 0;
-    animation: logo 5s ease forwards;
+    animation: logo 2s ease forwards;
 }
 
 @keyframes logo {
-    25%{
+    15%{
         opacity: 0;
     }
-    50%{
+    60%{
         opacity: 1;
     }
-    75%{
+    80%{
+        opacity: 1;
+    }
+    100%{
         opacity: 0;
     }
 }
@@ -48,7 +51,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: signIn 5s ease forwards;
+    animation: signIn 2.5s ease forwards;
 }
 
 @keyframes signIn {
