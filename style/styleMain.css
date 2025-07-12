@@ -17,13 +17,18 @@ body{
     background-position: center;
     width: 100vw;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: preloaderAnimation 1s ease 5s forwards;
 }
 
 @keyframes preloaderAnimation {
-    
+    0%{}
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 .logoInicio{
@@ -93,4 +98,21 @@ body{
     margin:2rem;
     font-family: 'Myriad Pro Light';
     font-size: 20px;
+}
+
+.main{
+    margin: 0;
+    background-color: #fff;
+    position: fixed;
+    visibility: visible;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: -1;
+}
+
+h1{
+    color: black;
 }
