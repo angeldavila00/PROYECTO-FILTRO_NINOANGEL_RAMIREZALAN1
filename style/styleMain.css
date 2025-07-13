@@ -499,45 +499,6 @@ body {
 }
 
 
-/* Módulo Notification */
-.notification {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 350px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    z-index: 950;
-    animation: slideInLeft 0.5s ease;
-}
-
-.notification__title {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 8px;
-    font-size: 18px;
-}
-
-.notification__message {
-    color: #666;
-    line-height: 1.5;
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 
 /* Efectos adicionales */
