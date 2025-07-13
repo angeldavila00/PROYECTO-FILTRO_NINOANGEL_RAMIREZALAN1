@@ -237,9 +237,57 @@ main p {
 
 /* Indicadores */
 .indicadores {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
     width: 1746px;
     height: 800px;
 }
+tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.indicadores thead tr th img {
+    width: 36px;
+    height: 31px;
+    opacity: 0;
+}
+
+.indicadores tbody tr td img {
+    width: 36px;
+    height: 31px;
+}
+
+.indicadores th, .indicadores td{
+    text-align: center;
+    font-size: 24px;
+}
+
+th{
+    font-family: 'Myriad Pro Regular';
+}
+
+td{
+    font-family: 'Myriad Pro Light';
+}
+
+thead tr {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody tr {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid #000;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Indicadores */
 
 /* Main content */
