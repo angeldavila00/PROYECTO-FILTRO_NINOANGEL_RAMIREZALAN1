@@ -298,7 +298,7 @@ body {
 }
 
 /* Módulo Modal */
-.modal-overlay {
+.modal_overlay {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -312,7 +312,7 @@ body {
     visibility: hidden;
     transition: all 0.3s ease;
 }
-.modal-overlay:target {
+.modal_overlay:target {
     opacity: 1;
     visibility: visible;
 }
@@ -330,8 +330,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-.modal-overlay:target .modal {
-    transform: scale(1);
+.modal_overlay:target .modal {
+    transform: scale(0.7);
 }
 
 .modal__header {
@@ -351,7 +351,7 @@ body {
     font-weight: 600;
 }
 
-.modal__close {
+.modal_close {
     display: flex;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -361,7 +361,7 @@ body {
 }
 
 
-.modal__close:hover {
+.modal_close:hover {
     transform: scale(1.1);
 }
 
@@ -446,7 +446,7 @@ body {
 }
 
 
-.modal__content input:focus {
+.modal_content input:focus {
     outline: none;
     border-color: #667eea;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
