@@ -15,26 +15,26 @@
                 <div class="leftOpcs">
                     <div class="opc opc1">
                         <img src="./sources/svg/Group 3.svg" alt="icon">
-                        <p>Añadir</p>
+                        <a href="#modal">Añadir</a>
                     </div>
                     <div class="opc opc2">
                         <img src="./sources/svg/Icon open-reload.svg" alt="icon">
-                        <p>Refrescar</p>
+                        <a>Refrescar</a>
                     </div>
                     <div class="opc opc3">
                         <img src="./sources/svg/Icon material-delete-forever.svg" alt="icon">
-                        <p>Eliminar</p>
+                        <a>Eliminar</a>
                     </div>
                 </div>
                 <img src="./sources/svg/kario sin kairo.svg" alt="logo">
                 <div class="rightOpcs">
                     <div class="opc opc4">
                         <img src="./sources/svg/Icon material-bug-report.svg" alt="icon">
-                        <p>Reportar</p>
+                        <a href="modal-report">Reportar</a>
                     </div>
                     <div class="opc opc5">
                         <img src="./sources/svg/Icon ionic-ios-help-circle.svg" alt="icon">
-                        <p>Ayuda</p>
+                        <a href="modal-help">Ayuda</a>
                     </div>
                 </div>
             </div>
@@ -45,6 +45,7 @@
             </div>
         </header>
 </body>
+
 <div class="preloader">
     <img class="logoInicio" src="./sources/svg/kario sin kairo.svg" alt="logo">
     <div class="welcome">
@@ -55,4 +56,77 @@
         <p class="piePag">Usuario Administrador</p>
     </div>
 </div>
+<!-- Módulo Modal AÑADIR -->
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <div class="modal__header">
+            <h3>Añadir</h3>
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+            <label for="">Indicador</label>
+            <input type="text"/>
+            <label for="">Descripción</label>
+            <input type="text">
+            <label for="">Categoria</label>
+            <input type="text" />
+            <label for="fecha-inicio">Fecha de Inicio</label>
+            <input type="date" id="fecha-inicio" name="fecha-inicio" />
+            <label for="fecha-fin">Fecha de Terminación</label>
+            <input type="date" id="fecha-fin" name="fecha-fin" />
+            <label for="">Fórmula</label>
+            <input type="text">
+            <label for="">Frecuencia</label>
+            <input type="text"/>
+            <label for="">Cumplimiento</label>
+            <input type="text">
+            <a class="btn" href="#">Añadir Elemento </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal adicional para Reportar -->
+<div class="modal-overlay" id="modal-report">
+    <div class="modal">
+        <div class="modal__header">
+            <a href="#" class="modal__close">&times;</a>
+            <h3>Reportar</h3>
+        </div>
+        <div class="modal_content">
+            <h1 id="centro">Descripcion de Reporte:</h1>
+            <label for="">Nombre completo:</label>
+            <input type="text"/>
+            <label for="">Correo electronico:</label>
+            <input type="text">
+            <label for="">Telefono:</label>
+            <input type="number" />
+            <label id="motivo">Motivo:</label>
+            <input type="text" />
+            
+            <a class="btn" id="centro" href="#">Enviar Reporte</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal adicional para Ayuda -->
+<div class="modal-overlay" id="modal-help">
+    <div class="modal">
+        <div class="modal__header">
+            <h3>Ayuda</h3>
+            <a href="#" class="modal__close">&times;</a>
+        </div>
+        <div class="modal__content">
+            <h1 id="centro">Contactar con un asesor:</h1>
+            <label for="">Nombre completo:</label>
+            <input type="text"/>
+            <label for="">Correo electronico:</label>
+            <input type="text">
+            <label for="">Telefono:</label>
+            <input type="number" />
+            <label id="motivo">Descripcion del problema:</label>
+            <input type="text" />
+            <a class="btn" id="centro" href="#">Enviar</a>
+        </div>
+    </div>
+</div>
+
 </html>
