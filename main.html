@@ -28,7 +28,7 @@
                     <p>Eliminar</p>
                 </div>
             </div>
-            <img src="./sources/svg/kario sin kairo.svg" alt="logo">
+            <a href="#"><img src="./sources/svg/kario sin kairo.svg" alt="logo"></a>
             <div class="rightOpcs">
                 <a href="#modal_report">
                     <div class="opc opc4">
@@ -54,91 +54,48 @@
         <span class="titleMain">Panel de Indicadores</span>
         <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
         <div class="indicadores">
-            
+
         </div>
     </main>
+
+    <div class="preloader">
+        <img class="logoInicio" src="./sources/svg/kario sin kairo.svg" alt="logo">
+        <div class="welcome">
+            <img class="logoLogin" src="./sources/svg/kario.svg" alt="">
+            <span class="titulo">Bienvenido de nuevo</span>
+            <img src="./sources/img/pp@2x.png" alt="">
+            <span class="titulo">Pedro Felipe Gómez Bonilla </span>
+            <p class="piePag">Usuario Administrador</p>
+        </div>
+    </div>
+    <!-- Módulo Modal AÑADIR -->
+    <div class="modal_general" id="modal">
+        <div class="modal">
+            <div class="modal_header">
+                <h3>Añadir</h3>
+                <a href="#" class="cerrar_modal">&times;</a>
+            </div>
+            <label for="">Indicador</label>
+            <input type="text" />
+            <label for="">Descripción</label>
+            <input type="text">
+            <label for="">Categoria</label>
+            <input type="text" />
+            <label for="fecha-inicio">Fecha de Inicio</label>
+            <input type="date" id="fecha-inicio" name="fecha-inicio" />
+            <label for="fecha-fin">Fecha de Terminación</label>
+            <input type="date" id="fecha-fin" name="fecha-fin" />
+            <label for="">Fórmula</label>
+            <input type="text">
+            <label for="">Frecuencia</label>
+            <input type="text" />
+            <label for="">Cumplimiento</label>
+            <input type="text">
+            <a class="btn" href="#">Añadir Elemento </a>
+        </div>
+    </div>
+    </div>
+    
 </body>
-
-<div class="preloader">
-    <img class="logoInicio" src="./sources/svg/kario sin kairo.svg" alt="logo">
-    <div class="welcome">
-        <img class="logoLogin" src="./sources/svg/kario.svg" alt="">
-        <span class="titulo">Bienvenido de nuevo</span>
-        <img src="./sources/img/pp@2x.png" alt="">
-        <span class="titulo">Pedro Felipe Gómez Bonilla </span>
-        <p class="piePag">Usuario Administrador</p>
-    </div>
-</div>
-<!-- Módulo Modal AÑADIR -->
-<div class="modal_overlay" id="modal">
-    <div class="modal">
-        <div class="modal__header">
-            <h3>Añadir</h3>
-            <a href="#" class="modal_close">&times;</a>
-        </div>
-        <label for="">Indicador</label>
-        <input type="text" />
-        <label for="">Descripción</label>
-        <input type="text">
-        <label for="">Categoria</label>
-        <input type="text" />
-        <label for="fecha-inicio">Fecha de Inicio</label>
-        <input type="date" id="fecha-inicio" name="fecha-inicio" />
-        <label for="fecha-fin">Fecha de Terminación</label>
-        <input type="date" id="fecha-fin" name="fecha-fin" />
-        <label for="">Fórmula</label>
-        <input type="text">
-        <label for="">Frecuencia</label>
-        <input type="text" />
-        <label for="">Cumplimiento</label>
-        <input type="text">
-        <a class="btn" href="#">Añadir Elemento </a>
-    </div>
-</div>
-</div>
-
-<!-- Modal adicional para Reportar -->
-<div class="modal_overlay" id="modal_report">
-    <div class="modal">
-        <div class="modal__header">
-            <h3>Reportar</h3>
-            <a href="#" class="modal_close">&times;</a>
-        </div>
-        <div class="modal_content">
-            <h1 id="centro">Descripcion de Reporte:</h1>
-            <label for="">Nombre completo:</label>
-            <input type="text" />
-            <label for="">Correo electronico:</label>
-            <input type="text">
-            <label for="">Telefono:</label>
-            <input type="number" />
-            <label id="motivo">Motivo:</label>
-            <input type="text" />
-            <a class="btn" id="centro" href="#">Enviar Reporte</a>
-        </div>
-    </div>
-</div>
-
-<!-- Modal adicional para Ayuda -->
-<div class="modal_overlay" id="modal_help">
-    <div class="modal">
-        <div class="modal__header">
-            <h3>Ayuda</h3>
-            <a href="#" class="modal_close">&times;</a>
-        </div>
-        <div class="modal_content">
-            <h1 id="centro">Contactar con un asesor:</h1>
-            <label for="">Nombre completo:</label>
-            <input type="text" />
-            <label for="">Correo electronico:</label>
-            <input type="text">
-            <label for="">Telefono:</label>
-            <input type="number" />
-            <label id="motivo">Descripcion del problema:</label>
-            <input type="text" />
-            <a class="btn" id="centro" href="#">Enviar</a>
-        </div>
-    </div>
-</div>
 
 </html>
