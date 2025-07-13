@@ -25,6 +25,7 @@ body {
     justify-content: center;
     z-index: 99;
     animation: preloaderAnimation 1s ease 5s forwards;
+    display: none;
 }
 
 @keyframes preloaderAnimation {
@@ -110,7 +111,7 @@ body {
     font-size: 20px;
 }
 
-.main {
+body {
     margin: 0;
     background-color: #fff;
     visibility: visible;
@@ -119,15 +120,29 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
     z-index: 0;
 }
 
-.main header {
-    display: block;
-    width: 100%;
+/* Header design */
+header {
     height: 81.5px;
     border-bottom: 0.5px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header p {
+    color: #000;
+    size: 24px;
+    margin: 0;
 }
 
 .perfil {
@@ -146,39 +161,35 @@ body {
 }
 
 .imgs {
-    float: right;
     display: flex;
     align-items: center;
     gap: 1vw;
 }
 
 .headerCenter {
+    flex-grow: 1;
     display: flex;
-    width: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerCenter img {
     width: 42px;
     height: 37px;
-
 }
 
 .leftOpcs,
 .rightOpcs {
+    flex-grow: 1;
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .opc {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.opc p{
-    font-size: 24px;
 }
 
 .opc1 img {
@@ -205,7 +216,33 @@ body {
     width: 34px;
     height: 34px;
 }
+/* Header design */
 
+/* Main content */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.titleMain {
+    font-size: 40px;
+}
+
+main p {
+    font-family: 'Myriad Pro Light';
+    font-size: 24px;
+}
+
+/* Indicadores */
+.indicadores {
+    width: 1746px;
+    height: 800px;
+}
+/* Indicadores */
+
+/* Main content */
 
 /* Prueba de modulos*/
 .btn {

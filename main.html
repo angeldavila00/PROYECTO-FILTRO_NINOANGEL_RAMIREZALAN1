@@ -10,40 +10,53 @@
 </head>
 
 <body>
-        <header>
-            <div class="headerCenter">
-                <div class="leftOpcs">
+    <header>
+        <div class="headerCenter">
+            <div class="leftOpcs">
+                <a href="#modal">
                     <div class="opc opc1">
                         <img src="./sources/svg/Group 3.svg" alt="icon">
-                        <a href="#modal">Añadir</a>
+                        <p>Añadir</p>
                     </div>
-                    <div class="opc opc2">
-                        <img src="./sources/svg/Icon open-reload.svg" alt="icon">
-                        <a>Refrescar</a>
-                    </div>
-                    <div class="opc opc3">
-                        <img src="./sources/svg/Icon material-delete-forever.svg" alt="icon">
-                        <a>Eliminar</a>
-                    </div>
+                </a>
+                <div class="opc opc2">
+                    <img src="./sources/svg/Icon open-reload.svg" alt="icon">
+                    <p>Refrescar</p>
                 </div>
-                <img src="./sources/svg/kario sin kairo.svg" alt="logo">
-                <div class="rightOpcs">
+                <div class="opc opc3">
+                    <img src="./sources/svg/Icon material-delete-forever.svg" alt="icon">
+                    <p>Eliminar</p>
+                </div>
+            </div>
+            <img src="./sources/svg/kario sin kairo.svg" alt="logo">
+            <div class="rightOpcs">
+                <a href="#modal_report">
                     <div class="opc opc4">
                         <img src="./sources/svg/Icon material-bug-report.svg" alt="icon">
-                        <a href="#modal_report">Reportar</a>
+                        <p>Reportar</p>
                     </div>
+                </a>
+                <a href="#modal_help">
                     <div class="opc opc5">
                         <img src="./sources/svg/Icon ionic-ios-help-circle.svg" alt="icon">
-                        <a href="#modal_help">Ayuda</a>
+                        <p>Ayuda</p>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="imgs">
-                <img class="setting" src="./sources/svg/Icon ionic-ios-settings.svg" alt="icon">
-                <img class="notifi" src="./sources/svg/Icon material-notifications-active.svg" alt="icon">
-                <img class="perfil" src="./sources/img/pp@2x.png" alt="icon">
-            </div>
-        </header>
+        </div>
+        <div class="imgs">
+            <img class="setting" src="./sources/svg/Icon ionic-ios-settings.svg" alt="icon">
+            <img class="notifi" src="./sources/svg/Icon material-notifications-active.svg" alt="icon">
+            <img class="perfil" src="./sources/img/pp@2x.png" alt="icon">
+        </div>
+    </header>
+    <main>
+        <span class="titleMain">Panel de Indicadores</span>
+        <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
+        <div class="indicadores">
+            
+        </div>
+    </main>
 </body>
 
 <div class="preloader">
@@ -63,25 +76,25 @@
             <h3>Añadir</h3>
             <a href="#" class="modal_close">&times;</a>
         </div>
-            <label for="">Indicador</label>
-            <input type="text"/>
-            <label for="">Descripción</label>
-            <input type="text">
-            <label for="">Categoria</label>
-            <input type="text" />
-            <label for="fecha-inicio">Fecha de Inicio</label>
-            <input type="date" id="fecha-inicio" name="fecha-inicio" />
-            <label for="fecha-fin">Fecha de Terminación</label>
-            <input type="date" id="fecha-fin" name="fecha-fin" />
-            <label for="">Fórmula</label>
-            <input type="text">
-            <label for="">Frecuencia</label>
-            <input type="text"/>
-            <label for="">Cumplimiento</label>
-            <input type="text">
-            <a class="btn" href="#">Añadir Elemento </a>
-        </div>
+        <label for="">Indicador</label>
+        <input type="text" />
+        <label for="">Descripción</label>
+        <input type="text">
+        <label for="">Categoria</label>
+        <input type="text" />
+        <label for="fecha-inicio">Fecha de Inicio</label>
+        <input type="date" id="fecha-inicio" name="fecha-inicio" />
+        <label for="fecha-fin">Fecha de Terminación</label>
+        <input type="date" id="fecha-fin" name="fecha-fin" />
+        <label for="">Fórmula</label>
+        <input type="text">
+        <label for="">Frecuencia</label>
+        <input type="text" />
+        <label for="">Cumplimiento</label>
+        <input type="text">
+        <a class="btn" href="#">Añadir Elemento </a>
     </div>
+</div>
 </div>
 
 <!-- Modal adicional para Reportar -->
@@ -94,14 +107,13 @@
         <div class="modal_content">
             <h1 id="centro">Descripcion de Reporte:</h1>
             <label for="">Nombre completo:</label>
-            <input type="text"/>
+            <input type="text" />
             <label for="">Correo electronico:</label>
             <input type="text">
             <label for="">Telefono:</label>
             <input type="number" />
             <label id="motivo">Motivo:</label>
             <input type="text" />
-            
             <a class="btn" id="centro" href="#">Enviar Reporte</a>
         </div>
     </div>
@@ -117,7 +129,7 @@
         <div class="modal_content">
             <h1 id="centro">Contactar con un asesor:</h1>
             <label for="">Nombre completo:</label>
-            <input type="text"/>
+            <input type="text" />
             <label for="">Correo electronico:</label>
             <input type="text">
             <label for="">Telefono:</label>
