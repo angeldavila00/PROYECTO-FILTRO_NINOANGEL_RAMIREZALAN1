@@ -15,8 +15,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     position: fixed;
@@ -25,7 +25,6 @@ body {
     justify-content: center;
     z-index: 99;
     animation: preloaderAnimation 1s ease 5s forwards;
-    display: none;
 }
 
 @keyframes preloaderAnimation {
@@ -39,6 +38,7 @@ body {
 
 .logoInicio {
     position: absolute;
+    max-width: 70%;
     width: 230px;
     height: 200px;
     opacity: 0;
@@ -62,16 +62,25 @@ body {
 }
 
 .welcome {
+    max-width: 90%;
     width: 936px;
+    max-height: 90%;
     height: 549px;
     border: 1px solid #707070;
     border-radius: 67px;
+    padding: 2vw;
     opacity: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     animation: signIn 4s ease forwards;
+}
+
+@media only screen and (max-width:950px){
+    .welcome{
+    border-radius: 7vi;
+    }
 }
 
 @keyframes signIn {
@@ -129,12 +138,12 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 0 2vw;
 }
 
 header a {
     text-decoration: none;
-    color: #000;
 }
 
 header p {
@@ -231,11 +240,13 @@ main {
 .titleMain {
     font-size: 40px;
     margin: 1vw 0;
+    text-align: center;
 }
 
 main p {
     font-family: 'Myriad Pro Light';
     font-size: 24px;
+    text-align: center;
 }
 
 a {
@@ -247,6 +258,17 @@ a:hover {
 }
 
 /* Indicadores */
+
+.hamburguesita{
+    display: none;
+    width: 36px;
+    height: 31px;
+    cursor: pointer;
+    padding: 0.5vi;
+    border: 2px solid #000;
+    border-radius: 0.5vi;
+}
+
 .indicadores, .indicadoresPhone {
     display: flex;
     flex-direction: column;
@@ -281,7 +303,6 @@ a:hover {
 .th p {
     font-family: 'Myriad Pro Regular';
     margin: 0;
-    justify-self: center;
 }
 
 .contain-tr {
@@ -357,7 +378,7 @@ button p {
         border-radius: 30px;
         height: auto;
         width: fit-content;
-        padding: 1vw;
+        padding: 1rem;
     }    
     
     .indicadoresPhone .tbody .contain-tr img {
@@ -367,6 +388,16 @@ button p {
     .indicadoresPhone .th{
         color: #606060;
         align-self: start;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .leftOpcs,
+    .rightOpcs {
+        display: none;
+    }
+    .hamburguesita{
+        display: flex;
     }
 }
 
@@ -416,6 +447,7 @@ button p {
     z-index: 3;
     opacity: 0;
     flex-grow: 1;
+    display: none;
 }
 
 .modal_general img {
