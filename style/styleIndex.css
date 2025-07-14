@@ -53,10 +53,9 @@ body{
     width: 836px;
     max-height: 90%;
     height: 661px;
-    margin: 2vw;
     padding: 2vw;
     border: 1px solid #707070;
-    border-radius: 67px;
+    border-radius: 4vi;
     opacity: 1;
     background-color: white;
     display: flex;
