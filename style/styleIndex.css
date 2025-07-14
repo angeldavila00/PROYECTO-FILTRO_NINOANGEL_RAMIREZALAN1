@@ -21,6 +21,7 @@ body{
 
 .logoInicio{
     position: absolute;
+    max-width: 70%;
     width: 230px;
     height: 200px;
     opacity: 1;
@@ -43,12 +44,17 @@ body{
     }
     100%{
         opacity: 0;
+        visibility: hidden;
     }
 }
 
 .signIn{
+    max-width: 90%;
     width: 836px;
+    max-height: 90%;
     height: 661px;
+    margin: 2vw;
+    padding: 2vw;
     border: 1px solid #707070;
     border-radius: 67px;
     opacity: 1;
@@ -92,6 +98,7 @@ label{
     margin-top: 1vh;
     font-family: 'Myriad Pro Light';
     font-size: 25px;
+    max-width: 90%;
     width: 650px;
 }
 
@@ -99,13 +106,14 @@ p{
     margin: 1vh 0;
     font-family: 'Myriad Pro Light';
     font-size: 20px;
+    text-align: center;
 }
 
 
 input{
-
     border: 1px solid #707070;
     border-radius: 20px;
+    max-width: 90%;
     width: 635px;
     height: 50px;
     font-family: 'Myriad Pro Regular';
@@ -119,6 +127,7 @@ button{
     background-color: rgba(254, 112, 46, 1);
     border: 0;
     border-radius: 40px;
+    max-width: 90%;
     width: 336px;
     height: 70px;
     color: white;
