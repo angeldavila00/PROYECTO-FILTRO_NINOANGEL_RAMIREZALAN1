@@ -56,6 +56,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     animation: signIn 3.5s ease forwards;
 }
 
@@ -76,26 +77,26 @@ body{
 .logoLogin{
     width: 103px;
     height: 116px;
-    margin-top: 5%;
+    margin-top: 1vh;
 }
 
 .titulo{
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 1vh;
     text-align: center;
     font-size: 40px;
 }
 
 label{
     display: block;
-    margin-top: 1rem;
+    margin-top: 1vh;
     font-family: 'Myriad Pro Light';
     font-size: 25px;
     width: 650px;
 }
 
 p{
-    margin:2;
+    margin: 1vh 0;
     font-family: 'Myriad Pro Light';
     font-size: 20px;
 }
@@ -113,7 +114,8 @@ input{
 }
 
 button{
-    margin: 2rem;
+    padding: 0;
+    margin: 2vh 0;
     background-color: rgba(254, 112, 46, 1);
     border: 0;
     border-radius: 40px;
