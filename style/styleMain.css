@@ -132,7 +132,6 @@ header {
     justify-content: center;
     align-items: center;
     padding: 0 1vw;
-    
 }
 
 header a {
@@ -231,69 +230,111 @@ main {
 
 .titleMain {
     font-size: 40px;
+    margin: 1vw 0;
 }
 
 main p {
     font-family: 'Myriad Pro Light';
     font-size: 24px;
 }
+a{
+    transition: transform 0.2s ease; 
+}
+a:hover{
+    transform: translateY(-2px);
+}
 
 /* Indicadores */
 .indicadores {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
-    width: 1746px;
-    height: 800px;
+    margin-bottom: 2vw;
 }
-tbody{
+.tbody{
     display: flex;
     flex-direction: column;
     gap: 1vw;
 }
-.indicadores thead tr th img {
+.thead{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 0;
+}
+.indicadores .thead .contain-th img {
     width: 36px;
     height: 31px;
     opacity: 0;
 }
 
-.indicadores tbody tr td img {
+.indicadores .tbody .contain-tr img {
     width: 36px;
     height: 31px;
+    cursor: pointer;
 }
 
-.indicadores th, .indicadores td{
-    text-align: center;
-    font-size: 24px;
-}
-
-th{
+.tr p, .th p{
     font-family: 'Myriad Pro Regular';
+    margin: 0;
+    justify-self: center;
 }
 
-td{
-    font-family: 'Myriad Pro Light';
+.contain-tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
 }
 
-thead tr {
+.contain-th{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.indicadores{
+    display: block;
+}
+
+.thead .th {
+    flex-grow: 1;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
 
-tbody tr {
+.tbody .tr {
+    flex-grow: 1;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr 1.5fr 2fr 1fr 1fr 1fr 1fr;
     border: 1px solid #000;
-    border-radius: 25px;
+    border-radius: 30px;
     align-items: center;
     justify-content: center;
+    height: 81px;
 }
 
 /* Indicadores */
 
-/*A*/
+.buttonMain{
+    width: 336px;
+    height: 70px;
+    background-color: #ff7221;
+    border: none;
+    border-radius: 50px;
+}
+button p{
+    color: #fff;
+    font-family: 'Myriad Pro Regular';
+    font-size: 24px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/*Main containt*/
 
 /* Prueba de modulos*/
 .btn {
