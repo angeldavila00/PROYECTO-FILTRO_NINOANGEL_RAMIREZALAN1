@@ -270,6 +270,7 @@
                 </div>
                 <a href="#" class="cerrar_modal">&times;</a>
             </div>
+           
             <label for="">Indicador</label>
             <input type="text" />
             <label for="">Descripción</label>
@@ -286,7 +287,7 @@
             <input type="text" />
             <label for="">Cumplimiento</label>
             <input type="text">
-            <a class="btn" href="#">Añadir Elemento </a>
+            <a class="btn" href="#seguro_añadir">Añadir Elemento </a>
         </div>
 
     </div>
@@ -320,7 +321,7 @@
                     <input class="motivo_cuadro" type="text">
                 </div>
             </div>
-            <a class="btn" href="#">ENVIAR </a>
+            <a class="btn" href="#seguro_reportar">ENVIAR </a>
         </div>
     </div>
     <!-- Módulo Modal AYUDAR -->
@@ -352,13 +353,66 @@
                     <input class="motivo_cuadro" type="text">
                 </div>
             </div>
-            <a class="btn" href="#">ENVIAR </a>
+            <a class="btn" href="#seguro_ayuda">ENVIAR </a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!--Modulos de confirmacion-->
+    <div class="modal_general" id="seguro_añadir" >
+        <div class="modal_seguro">
+            <div class="modal_header">
+                <div class="centered">
+                    <img src="./sources/svg/Group 3.svg" alt="icon">
+                    <h3>Añadir</h3>
+                </div>
+                <a href="#" class="cerrar_modal">&times;</a>
+
+            </div>
+                <strong>¿Esta seguro de añadir el indicador nuevo?</strong>
+            <div class="botones">
+                    <a class="btn" href="#">Si, agregar</a>
+                    <a class="btn" href="#modal">Regresar</a>
+            </div>
         </div>
     </div>
 
+    <!--Modulo de seguro reportar-->
+    <div class="modal_general" id="seguro_reportar" >
+        <div class="modal_seguro">
+            <div class="modal_header">
+                <div class="centered">
+                    <img src="./sources/svg/Icon material-bug-report.svg" alt="icon">
+                    <h3>Reportar</h3>
+                </div>
+                <a href="#" class="cerrar_modal">&times;</a>
+
+            </div>
+                <strong>¿La información a enviar es correcta?</strong>
+            <div class="botones">
+                    <a class="btn" href="#">Si, agregar</a>
+                    <a class="btn" href="#modal_reporte">Regresar</a>
+            </div>
+        </div>
     </div>
 
+    <!--Modal de seguro ayuda-->
+
+    <div class="modal_general" id="seguro_ayuda" >
+        <div class="modal_seguro">
+            <div class="modal_header">
+                <div class="centered">
+                    <img src="./sources/svg/Icon ionic-ios-help-circle.svg" alt="icon">
+                    <h3>Ayuda</h3>
+                </div>
+            </div>
+                <strong>Mensaje enviado!</strong>
+        </div>
     </div>
+
+
+
 
 
 
