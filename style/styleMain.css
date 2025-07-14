@@ -366,17 +366,12 @@ button p {
 
 /*Cerrar modal*/
 .cerrar_modal {
-    display: flex;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 40px;
     font-weight: bold;
     transition: opacity 0.3s ease;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 5px;
+    padding-right: 1vw;
 }
 
 
@@ -405,27 +400,19 @@ button p {
 
 }
 
-.modal_header h3 {
-    display: flex;
-    text-align: center;
-    width: 1471px;
-    align-content: flex-start;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-grow: 1;
+.modal_general:target .modal_añadir {
+    transform: scale(1);
 }
 
-a .cerrar_modal {
-    text-align: left;
+.modal_general:target .modal_reportar {
+    transform: scale(1);
+}
+.modal_general:target .modal_ayuda{
+    transform: scale(1);
+
 }
 
-.modal_general:target .modal {
-    transform: scale(0.8);
-}
-
-.modal_ayuda {
+.modal_añadir {
     background-color: #ffffff;
     border: 2px solid black;
     width: auto;
@@ -435,26 +422,35 @@ a .cerrar_modal {
     transform: scale(0.7);
     display: flex;
     z-index: 3;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     font-family: 'Myriad Pro Regular' ;
     font-size: 24px;
+    padding-bottom: 2vh;
 /**/
 
 }
 
 .modal_header {
-    width: 1000px;
-    color: rgb(0, 0, 0);
-    border-color: #000000;
-    border: 2px solid rgb(48, 47, 47);
+    width: 100%;
+    border-bottom: 2px solid #000;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
     flex-direction: row;
-
+    align-items: center;
 }
 
-.modal_ayuda input {
+.centered{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered h3{
+    margin: 0;
+}
+
+.modal_añadir input {
     border-radius: 25px;
     display: flex;
     text-align: center;
@@ -468,7 +464,7 @@ a .cerrar_modal {
 
 }
 
-.modal_ayuda label {
+.modal_añadir label {
     display: flex;
     text-align: center;
     font-size: 130%;
@@ -485,8 +481,10 @@ a .cerrar_modal {
     transform: scale(0.7);
     display: flex;
     z-index: 3;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
+    padding-bottom: 2vh;
 }
+
 
 .name{
     display: flex;
@@ -543,5 +541,21 @@ a .cerrar_modal {
 }
 h1{
     text-align: center;
+}
+
+/*Modulo de AYUDA*/
+.modal_ayuda{
+    background-color: #ffffff;
+    border: 2px solid black;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.7);
+    display: flex;
+    z-index: 3;
+    transition: transform 0.5s ease;
+    padding-bottom: 2vh;
+    
 }
 
