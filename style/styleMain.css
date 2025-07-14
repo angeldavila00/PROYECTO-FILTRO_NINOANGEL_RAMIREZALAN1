@@ -447,6 +447,7 @@ button p {
     z-index: 3;
     opacity: 1;
     flex-grow: 1;
+    display: none;
 }
 
 .modal_general img {
