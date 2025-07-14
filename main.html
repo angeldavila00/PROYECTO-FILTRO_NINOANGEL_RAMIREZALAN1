@@ -34,13 +34,13 @@
             </div>
             <a href="#"><img src="./sources/svg/kario sin kairo.svg" alt="logo"></a>
             <div class="rightOpcs">
-                <a href="#modal_report">
+                <a href="#modal_reporte">
                     <div class="opc opc4">
                         <img src="./sources/svg/Icon material-bug-report.svg" alt="icon">
                         <p>Reportar</p>
                     </div>
                 </a>
-                <a href="#modal_help">
+                <a href="#modal_ayuda">
                     <div class="opc opc5">
                         <img src="./sources/svg/Icon ionic-ios-help-circle.svg" alt="icon">
                         <p>Ayuda</p>
@@ -178,7 +178,7 @@
     </div>
     <!-- Módulo Modal AÑADIR -->
     <div class="modal_general" id="modal">
-        <div class="modal">
+        <div class="modal_ayuda">
             <div class="modal_header">
                 <img src="./sources/svg/Group 3.svg" alt="icon">
                 <h3>Añadir</h3>
@@ -202,9 +202,48 @@
             <input type="text">
             <a class="btn" href="#">Añadir Elemento </a>
         </div>
+        
     </div>
     </div>
     <!-- Módulo Modal REPORTAR -->
+    <div class="modal_general" id="modal_reporte">
+        <div class="modal_reportar">
+            <div class="modal_header">
+                <img src="./sources/svg/Icon material-bug-report.svg" alt="icon">
+                <h3>Reportar</h3>
+                <a href="#" class="cerrar_modal">&times;</a>
+            </div>
+            <div class="modal_contain">
+                <h1>Descripcion de Reporte</h1>
+            <div class="name">
+                <label for="">Nombre completo:</label>
+                <input type="text">
+            </div>
+                <div class="correo">
+                    <label for="">Correo electronico:</label>
+                    <input type="email">
+                </div>
+                <div class="cel">
+                    <label for="">Telefono:</label>
+                    <input type="number">
+                </div>
+                <div class="motivo">
+                    <label for="">Motivo:</label>
+                    <input class="motivo_cuadro" type="text">
+                   
+                </div>
+
+            </div>
+            <a class="btn" href="#">ENVIAR </a>
+
+
+
+
+
+
+        </div>
+
+    </div>
 
 
 
