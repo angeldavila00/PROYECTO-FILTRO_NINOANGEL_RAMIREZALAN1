@@ -118,8 +118,6 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
     z-index: 0;
 }
 
@@ -131,7 +129,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 1vw;
+    padding: 0 2vw;
 }
 
 header a {
@@ -249,7 +247,7 @@ a:hover {
 }
 
 /* Indicadores */
-.indicadores {
+.indicadores, .indicadoresPhone {
     display: flex;
     flex-direction: column;
     margin-bottom: 2vw;
@@ -302,10 +300,6 @@ a:hover {
     gap: 0.5vw;
 }
 
-.indicadores {
-    display: block;
-}
-
 .thead .th {
     flex-grow: 1;
     display: grid;
@@ -325,6 +319,10 @@ a:hover {
     height: 81px;
 }
 
+.indicadoresPhone{
+    display: none;
+}
+
 /* Indicadores */
 
 .buttonMain {
@@ -341,6 +339,35 @@ button p {
     font-size: 24px;
     margin: 0;
     cursor: pointer;
+}
+
+@media only screen and (max-width:1570px) {
+    .indicadores{
+        display: none;
+    }
+
+    .indicadoresPhone{
+        display: flex;
+    }
+
+    .indicadoresPhone .tbody .tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+        border-radius: 30px;
+        height: auto;
+        width: fit-content;
+        padding: 1vw;
+    }    
+    
+    .indicadoresPhone .tbody .contain-tr img {
+        display: none;
+    }
+
+    .indicadoresPhone .th{
+        color: #606060;
+        align-self: start;
+    }
 }
 
 /*Main containt*/
