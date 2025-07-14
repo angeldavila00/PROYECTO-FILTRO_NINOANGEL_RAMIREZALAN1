@@ -216,6 +216,7 @@ header p {
     width: 34px;
     height: 34px;
 }
+
 /* Header design */
 
 /* Main content */
@@ -225,7 +226,7 @@ main {
     flex-direction: column;
     padding: 1vw;
     background-color: white;
-    min-height: 1200px; 
+    min-height: 1200px;
 }
 
 
@@ -238,10 +239,12 @@ main p {
     font-family: 'Myriad Pro Light';
     font-size: 24px;
 }
-a{
-    transition: transform 0.2s ease; 
+
+a {
+    transition: transform 0.2s ease;
 }
-a:hover{
+
+a:hover {
     transform: translateY(-2px);
 }
 
@@ -251,16 +254,19 @@ a:hover{
     flex-direction: column;
     margin-bottom: 2vw;
 }
-.tbody{
+
+.tbody {
     display: flex;
     flex-direction: column;
     gap: 1vw;
 }
-.thead{
+
+.thead {
     display: flex;
     flex-direction: column;
     margin: 1vw 0;
 }
+
 .indicadores .thead .contain-th img {
     width: 36px;
     height: 31px;
@@ -273,13 +279,14 @@ a:hover{
     cursor: pointer;
 }
 
-.tr p, .th p{
+.tr p,
+.th p {
     font-family: 'Myriad Pro Regular';
     margin: 0;
     justify-self: center;
 }
 
-.contain-tr{
+.contain-tr {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -287,7 +294,7 @@ a:hover{
     gap: 0.5vw;
 }
 
-.contain-th{
+.contain-th {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -295,7 +302,7 @@ a:hover{
     gap: 0.5vw;
 }
 
-.indicadores{
+.indicadores {
     display: block;
 }
 
@@ -320,14 +327,15 @@ a:hover{
 
 /* Indicadores */
 
-.buttonMain{
+.buttonMain {
     width: 336px;
     height: 70px;
     background-color: #ff7221;
     border: none;
     border-radius: 50px;
 }
-button p{
+
+button p {
     color: #fff;
     font-family: 'Myriad Pro Regular';
     font-size: 24px;
@@ -341,11 +349,11 @@ button p{
 .btn {
     padding: 15px 30px;
     background-color: #FE702E;
-    color:white;
+    color: white;
     text-decoration: none;
     border-radius: 30px;
     backdrop-filter: blur(10px);
-    border: 1px solid  #FE702E;
+    border: 1px solid #FE702E;
     transition: all 0.3s ease;
     margin: auto;
     cursor: pointer;
@@ -360,7 +368,7 @@ button p{
 }
 
 /*Cerrar modal*/
-.cerrar_modal{
+.cerrar_modal {
     display: flex;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -372,11 +380,11 @@ button p{
     justify-content: space-evenly;
     align-items: flex-start;
     padding: 5px;
-    }
-    
+}
+
 
 /* Módulo Modal */
-.modal_general{
+.modal_general {
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0;
     width: 100vw;
@@ -390,6 +398,7 @@ button p{
     opacity: 1;
     flex-grow: 1;
 }
+
 .modal_general img {
     width: 42px;
     height: 37px;
@@ -418,7 +427,8 @@ a .cerrar_modal {
 .modal_general:target .modal {
     transform: scale(0.8);
 }
-.modal{
+
+.modal {
     background-color: #ffffff;
     border: 2px solid black;
     width: 1000px;
@@ -429,8 +439,8 @@ a .cerrar_modal {
     display: flex;
     z-index: 3;
     transition: transform 0.3s ease;
-    
-    
+
+
 }
 
 .modal_header {
@@ -442,11 +452,11 @@ a .cerrar_modal {
     justify-content: space-around;
     text-align: center;
     flex-direction: row;
-    
+
 }
 
-.modal input{
-    border-radius: 25px ;
+.modal input {
+    border-radius: 25px;
     display: flex;
     text-align: center;
     gap: 100px;
@@ -457,10 +467,8 @@ a .cerrar_modal {
     font-size: 20px;
 }
 
-.modal label{
+.modal label {
     display: flex;
     text-align: center;
     font-size: 130%;
 }
-
-
