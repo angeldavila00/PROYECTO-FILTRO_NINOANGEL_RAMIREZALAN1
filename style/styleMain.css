@@ -123,10 +123,6 @@ body {
 body {
     margin: 0;
     background-color: #fff;
-    visibility: visible;
-    position: absolute;
-    left: 0;
-    top: 0;
     z-index: 0;
 }
 
@@ -139,7 +135,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 2vw;
 }
 
 header a {
@@ -171,6 +166,7 @@ header p {
     display: flex;
     align-items: center;
     gap: 1vw;
+    padding-right: 1vw;
 }
 
 .headerCenter {
@@ -178,6 +174,7 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 1vw;
 }
 
 .headerCenter img {
