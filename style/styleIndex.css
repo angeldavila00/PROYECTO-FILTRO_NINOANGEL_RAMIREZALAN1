@@ -27,6 +27,7 @@ body{
     opacity: 1;
     animation: logo 2s ease forwards;
     animation-delay: 1s;
+    display: none;
 }
 
 @keyframes logo {
@@ -55,7 +56,7 @@ body{
     height: 661px;
     padding: 2vw;
     border: 1px solid #707070;
-    border-radius: 4vi;
+    border-radius: 67px;
     opacity: 1;
     background-color: white;
     display: flex;
@@ -63,6 +64,12 @@ body{
     align-items: center;
     justify-content: center;
     animation: signIn 3.5s ease forwards;
+}
+
+@media only screen and (max-width:950px){
+    .signIn{
+    border-radius: 7vi;
+    }
 }
 
 @keyframes signIn {
