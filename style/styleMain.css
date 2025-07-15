@@ -264,6 +264,7 @@ a:hover {
     padding: 0.5vi;
     border: 2px solid #000;
     border-radius: 0.5vi;
+    margin-left: 1vw;
 }
 
 .indicadores, .indicadoresPhone {
@@ -395,6 +396,9 @@ button p {
     }
     .hamburguesita{
         display: flex;
+    }
+    .headerCenter{
+        padding-left: 0;
     }
 }
 
